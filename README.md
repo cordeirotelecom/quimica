@@ -1,6 +1,8 @@
-# Química para Todos - Plataforma de Ensino Interativo 🧪
+# Química para Todos - Aprendizado Interativo e Divertido
 
-> **A plataforma educativa mais completa para aprender química de forma divertida e segura** - Experimentos virtuais, simulações 3D e IA tutora para todas as idades.
+Bem-vindo ao site de ensino de química mais avançado e interativo do mundo! Nossa plataforma revoluciona a forma como estudantes de todas as idades aprendem química através de tecnologia de ponta, experimentos virtuais seguros e recursos pedagógicos inovadores.
+
+**🚀 Site agora live em: https://quimica-didatica.netlify.app**
 
 ![Química para Todos](https://img.shields.io/badge/Química_para_Todos-Educação_Inovadora-blue?style=for-the-badge)
 ![Next.js](https://img.shields.io/badge/Next.js-15.5.2-black?style=for-the-badge&logo=next.js)
