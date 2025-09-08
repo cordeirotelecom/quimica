@@ -89,6 +89,54 @@ const molecules = [
     polarity: "Polar",
     applications: ["Bebidas alcoólicas", "Combustível", "Solvente"],
     color: "from-yellow-400 to-amber-500"
+  },
+  {
+    id: 7,
+    name: "Cloreto de Sódio (NaCl)",
+    formula: "NaCl",
+    description: "Sal de cozinha com estrutura cristalina iônica",
+    category: "Iônico",
+    atoms: ["Na+", "Cl-"],
+    bonds: [{ from: 0, to: 1, type: "ionic" }],
+    geometry: "Cúbica simples",
+    bondAngle: "90°",
+    polarity: "Iônico",
+    applications: ["Tempero", "Conservação", "Eletrólise"],
+    color: "from-blue-300 to-teal-400"
+  },
+  {
+    id: 8,
+    name: "Glicose (C₆H₁₂O₆)",
+    formula: "C6H12O6",
+    description: "Açúcar fundamental para energia celular",
+    category: "Orgânica",
+    atoms: ["C", "C", "C", "C", "C", "C", "O", "O", "O", "O", "O", "O"],
+    bonds: [
+      { from: 0, to: 1 }, { from: 1, to: 2 }, { from: 2, to: 3 },
+      { from: 3, to: 4 }, { from: 4, to: 5 }, { from: 5, to: 0 }
+    ],
+    geometry: "Anel piranosídico",
+    bondAngle: "≈109.5°",
+    polarity: "Polar",
+    applications: ["Energia celular", "Adoçante", "Fermentação"],
+    color: "from-emerald-400 to-green-500"
+  },
+  {
+    id: 9,
+    name: "Ácido Sulfúrico (H₂SO₄)",
+    formula: "H2SO4",
+    description: "Ácido forte muito usado na indústria",
+    category: "Inorgânica",
+    atoms: ["H", "H", "S", "O", "O", "O", "O"],
+    bonds: [
+      { from: 0, to: 3 }, { from: 1, to: 4 }, { from: 2, to: 3 },
+      { from: 2, to: 4 }, { from: 2, to: 5, type: "double" }, { from: 2, to: 6, type: "double" }
+    ],
+    geometry: "Tetraédrica no S",
+    bondAngle: "109.5°",
+    polarity: "Polar",
+    applications: ["Baterias", "Fertilizantes", "Refinamento"],
+    color: "from-red-400 to-pink-500"
   }
 ]
 

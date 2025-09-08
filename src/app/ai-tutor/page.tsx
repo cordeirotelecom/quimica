@@ -43,11 +43,22 @@ export default function AITutorPage() {
     { icon: "🧪", text: "Experimento com ácidos e bases", category: "Experimentos" },
     { icon: "📊", text: "Balanceamento de equações", category: "Equações" },
     { icon: "🌡️", text: "Lei dos gases ideais", category: "Gases" },
-    { icon: "💎", text: "Cristalografia química", category: "Estruturas" }
+    { icon: "💎", text: "Cristalografia química", category: "Estruturas" },
+    { icon: "⚡", text: "Eletroquímica e pilhas", category: "Eletroquímica" },
+    { icon: "🌈", text: "Espectroscopia e cores", category: "Análise" },
+    { icon: "🔬", text: "Cinética química", category: "Velocidade" },
+    { icon: "⚗️", text: "Química orgânica", category: "Orgânica" },
+    { icon: "💧", text: "Soluções e concentrações", category: "Soluções" },
+    { icon: "🌡️", text: "Termoquímica", category: "Energia" },
+    { icon: "⚛️", text: "Radioatividade", category: "Nuclear" },
+    { icon: "🧂", text: "Equilíbrio químico", category: "Equilíbrio" }
   ]
 
   const capabilities = [
     { icon: <Brain className="h-5 w-5" />, title: "Explicações Detalhadas", description: "Conceitos complexos simplificados" },
+    { icon: <Calculator className="h-5 w-5" />, title: "Resolução de Problemas", description: "Passo a passo detalhado" },
+    { icon: <FlaskConical className="h-5 w-5" />, title: "Sugestões de Experimentos", description: "Práticas seguras e educativas" },
+    { icon: <BookOpen className="h-5 w-5" />, title: "Material de Estudo", description: "Resumos e exercícios personalizados" },
     { icon: <Calculator className="h-5 w-5" />, title: "Resolução de Problemas", description: "Passo a passo com exemplos" },
     { icon: <FlaskConical className="h-5 w-5" />, title: "Análise de Experimentos", description: "Interprete resultados e dados" },
     { icon: <BookOpen className="h-5 w-5" />, title: "Recomendações Personalizadas", description: "Conteúdo adaptado ao seu nível" },
@@ -174,6 +185,117 @@ Exemplo: CH₄ + 2O₂ → CO₂ + 2H₂O
 - Superfície de contato
 
 Quer ver exemplos práticos ou simular alguma reação específica?`
+    }
+
+    if (input.includes('ph') || input.includes('ácido') || input.includes('base')) {
+      return `🌡️ **pH e Ácidos/Bases - Guia Completo**
+
+**Escala de pH:**
+\`\`\`
+0    7    14
+Ácido ← Neutro → Base
+\`\`\`
+
+**Conceitos importantes:**
+- **pH < 7**: Ácido (mais H⁺)
+- **pH = 7**: Neutro (H⁺ = OH⁻)
+- **pH > 7**: Base (mais OH⁻)
+
+**Cálculos essenciais:**
+- pH = -log[H⁺]
+- pOH = -log[OH⁻]
+- pH + pOH = 14
+
+**Exemplos práticos:**
+🍋 Limão: pH ≈ 2 (muito ácido)
+💧 Água pura: pH = 7 (neutro)
+🧼 Sabão: pH ≈ 10 (básico)
+
+💡 Use nossa calculadora de pH para praticar!
+
+Quer ver experimentos com indicadores ou calcular algum pH específico?`
+    }
+
+    if (input.includes('experimento') || input.includes('prática')) {
+      return `🧪 **Experimentos Seguros e Educativos**
+
+**Experimentos disponíveis:**
+
+**🌋 Nível Iniciante:**
+- Vulcão de bicarbonato
+- Densidade dos líquidos
+- Cristalização de sal
+
+**⚗️ Nível Intermediário:**
+- Síntese de sabão
+- Extração de DNA
+- Indicadores naturais
+
+**⚡ Nível Avançado:**
+- Pilha de Daniell
+- Eletroquímica
+- Cinética química
+
+**Segurança sempre em primeiro lugar! 🛡️**
+- Use EPIs adequados
+- Trabalhe em local ventilado
+- Tenha supervisão quando necessário
+
+Qual experimento te interessa? Posso dar instruções detalhadas e explicar a teoria por trás!`
+    }
+
+    if (input.includes('equação') || input.includes('balanceamento')) {
+      return `⚖️ **Balanceamento de Equações Químicas**
+
+**Método do Tentativa e Erro:**
+
+**Passo a passo:**
+1. **Conte os átomos** de cada elemento
+2. **Comece pelo elemento mais complexo**
+3. **Ajuste os coeficientes** gradualmente
+4. **Verifique se está balanceada**
+
+**Exemplo - Combustão do metano:**
+\`\`\`
+CH₄ + O₂ → CO₂ + H₂O (não balanceada)
+
+CH₄ + 2O₂ → CO₂ + 2H₂O (balanceada!)
+\`\`\`
+
+**Verificação:**
+- C: 1 = 1 ✓
+- H: 4 = 4 ✓  
+- O: 4 = 4 ✓
+
+**Dicas importantes:**
+🎯 Nunca mude as fórmulas, apenas os coeficientes
+🎯 Use frações se necessário, depois simplifique
+🎯 Confira sempre no final
+
+Quer praticar com uma equação específica?`
+    }
+
+    if (input.includes('tabela periódica') || input.includes('elemento')) {
+      return `⚛️ **Tabela Periódica - Guia Completo**
+
+**Organização:**
+- **Períodos** (horizontal): mesmo número de camadas
+- **Grupos/Famílias** (vertical): propriedades similares
+
+**Principais famílias:**
+🔴 **Metais Alcalinos** (Grupo 1): Li, Na, K, Rb, Cs, Fr
+🟠 **Alcalino-terrosos** (Grupo 2): Be, Mg, Ca, Sr, Ba, Ra  
+🟣 **Halogênios** (Grupo 17): F, Cl, Br, I, At
+🟪 **Gases Nobres** (Grupo 18): He, Ne, Ar, Kr, Xe, Rn
+
+**Propriedades periódicas:**
+📏 **Raio atômico**: ↑ no grupo, ↓ no período
+⚡ **Energia de ionização**: ↓ no grupo, ↑ no período
+🧲 **Eletronegatividade**: ↓ no grupo, ↑ no período
+
+🔍 **Use nossa tabela interativa** para explorar cada elemento com detalhes 3D!
+
+Quer saber sobre algum elemento específico?`
     }
 
     // Resposta genérica inteligente

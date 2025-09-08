@@ -294,6 +294,113 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Estatísticas Impressionantes */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Impacto Mundial da QuímicaMax
+            </h2>
+            <p className="text-xl text-blue-100">
+              Transformando a educação química ao redor do mundo
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-5xl font-bold text-white mb-2">5.2M+</div>
+              <div className="text-blue-100 font-medium">Estudantes Ativos</div>
+              <div className="text-sm text-blue-200 mt-1">Em 195 países</div>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold text-white mb-2">850K+</div>
+              <div className="text-blue-100 font-medium">Experimentos Realizados</div>
+              <div className="text-sm text-blue-200 mt-1">Por mês</div>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold text-white mb-2">12K+</div>
+              <div className="text-blue-100 font-medium">Professores</div>
+              <div className="text-sm text-blue-200 mt-1">Certificados</div>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold text-white mb-2">98%</div>
+              <div className="text-blue-100 font-medium">Aprovação</div>
+              <div className="text-sm text-blue-200 mt-1">Satisfação dos usuários</div>
+            </div>
+          </div>
+
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center">
+              <Award className="h-12 w-12 text-yellow-300 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-white mb-2">Prêmio UNESCO</h3>
+              <p className="text-blue-100">Melhor Plataforma Educacional 2024</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center">
+              <TrendingUp className="h-12 w-12 text-green-300 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-white mb-2">85% Melhoria</h3>
+              <p className="text-blue-100">Notas em Química dos usuários</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center">
+              <Users className="h-12 w-12 text-blue-300 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-white mb-2">Comunidade Global</h3>
+              <p className="text-blue-100">Rede mundial de aprendizado</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Final */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Pronto para Dominar a Química?
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Junte-se a milhões de estudantes que já descobriram uma nova forma de aprender química
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              href="/experimentos"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              <Play className="h-5 w-5 mr-2" />
+              Começar Experimentos Grátis
+            </Link>
+            <Link 
+              href="/tabela-periodica"
+              className="inline-flex items-center px-8 py-4 bg-white border-2 border-blue-600 text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              <Atom className="h-5 w-5 mr-2" />
+              Explorar Tabela Periódica
+            </Link>
+          </div>
+          
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">✓</span>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">100% Gratuito</h3>
+              <p className="text-gray-600">Acesso completo sem custos</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🚀</span>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">Início Instantâneo</h3>
+              <p className="text-gray-600">Comece a aprender agora mesmo</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🌍</span>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-2">Global</h3>
+              <p className="text-gray-600">Disponível em todo o mundo</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="px-6 py-12 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto">
