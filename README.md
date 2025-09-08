@@ -1,8 +1,19 @@
-# QuímicaMax - Site de Ensino de Química Prática 🧪
+# Química para Todos - Plataforma de Ensino Interativo 🧪
 
-O melhor site de ensino de química prática do mundo, desenvolvido para todas as idades e níveis de conhecimento.
+> **A plataforma educativa mais completa para aprender química de forma divertida e segura** - Experimentos virtuais, simulações 3D e IA tutora para todas as idades.
 
-## 🌟 Características
+![Química para Todos](https://img.shields.io/badge/Química_para_Todos-Educação_Inovadora-blue?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-15.5.2-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)
+
+## 🌟 Visão Geral
+
+**Química para Todos** é uma plataforma educativa revolucionária que torna o aprendizado de química acessível, seguro e envolvente para estudantes de todas as idades. Com tecnologia de ponta e abordagem pedagógica inovadora, oferecemos uma experiência completa de aprendizado.
+
+## � Missão
+
+Democratizar o ensino de química através da tecnologia, proporcionando acesso universal a experimentos seguros, simulações avançadas e recursos educativos de alta qualidade.
 
 - **Tabela Periódica Interativa**: Explore elementos químicos com animações e informações detalhadas
 - **Experimentos Virtuais**: Realize experimentos seguros em laboratório virtual

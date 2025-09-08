@@ -394,7 +394,7 @@ export default function ExperimentosPage() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Ordenar por</label>
                   <select
                     value={sortBy}
-                    onChange={(e) => setSortBy(e.target.value as any)}
+                    onChange={(e) => setSortBy(e.target.value as 'popular' | 'rating' | 'newest' | 'duration')}
                     className="w-full p-2 border border-gray-300 rounded-lg text-sm"
                   >
                     <option value="popular">Mais populares</option>
